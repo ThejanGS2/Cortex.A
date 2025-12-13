@@ -91,14 +91,26 @@
                     <div class="split-content">
                         <h2 class="section-title">Who Are We?</h2>
                         <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
-                            CortexA is a premier digital agency specializing in crafting bespoke web solutions. We merge
-                            creativity with technical precision to deliver products that stand out in a crowded digital
-                            landscape.
+                            At CortexA, we are more than just developers; we are digital architects. Our mission is to
+                            bridge the gap between creative vision and technical reality. We believe in:
+                        </p>
+                        <ul
+                            style="color: var(--text-secondary); margin-bottom: 2rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;">🔹 <strong>Innovation:</strong> Pushing boundaries with
+                                every line of code.</li>
+                            <li style="margin-bottom: 0.5rem;">🔹 <strong>Transparency:</strong> Clear communication at
+                                every step.</li>
+                            <li>🔹 <strong>Results:</strong> Focusing on metrics that matter to your business.</li>
+                        </ul>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                            From startups to enterprises, we partner with clients who refuse to settle for the ordinary.
+                            Let's build something extraordinary together.
                         </p>
                         <a href="#about" class="btn btn-outline">More About Us</a>
                     </div>
                     <div class="split-image">
-                        <div class="split-image-placeholder">Agency Office / Team</div>
+                        <img src="images/agency_team.png" alt="CortexA Team at Work"
+                            style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -144,6 +156,22 @@
                             and running smoothly.</p>
                         <a href="#" class="service-link">Learn More</a>
                     </div>
+                    <!-- Card 5 (New) -->
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile Apps</h3>
+                        <p>Native and cross-platform mobile solutions. We keep your audience connected with intuitive
+                            apps.</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
+                    <!-- Card 6 (New) -->
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>SEO & Growth</h3>
+                        <p>Data-driven strategies to boost visibility. We ensure your brand dominates search rankings.
+                        </p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
                 </div>
             </div>
 
@@ -155,30 +183,71 @@
                 <h2 class="section-title">Featured Work</h2>
                 <p class="section-subtitle">Real results. Real impact. See what we've built.</p>
 
-                <div class="portfolio-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-image-placeholder">FinTech Dashboard UI</div>
+                <div class="portfolio-wrapper">
+                    <button class="slider-btn prev-btn" id="slider-prev">‹</button>
+
+                    <div class="portfolio-slider" id="portfolio-track">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-thumbnail">
+                                <div class="project-image-placeholder">FinTech UI</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Nova Finance</h3>
+                                <p class="project-desc">Trading platform interface redesign.</p>
+                                <a href="#" class="github-link">View on GitHub <span>↗</span></a>
+                            </div>
                         </div>
-                        <div class="project-info">
-                            <h3>Nova Finance</h3>
-                            <p>Complete redesign of a high-frequency trading platform interface.</p>
-                            <span class="project-result">🚀 Increased user retention by 35%</span>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-thumbnail">
+                                <div class="project-image-placeholder">E-Com Brand</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Lumina Fashion</h3>
+                                <p class="project-desc">Headless Shopify storefront.</p>
+                                <a href="#" class="github-link">View on GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 (New for scroll demo) -->
+                        <div class="project-card">
+                            <div class="project-thumbnail">
+                                <div class="project-image-placeholder">AI Analytics</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>DataMind AI</h3>
+                                <p class="project-desc">Predictive analytics dashboard.</p>
+                                <a href="#" class="github-link">View on GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 (New for scroll demo) -->
+                        <div class="project-card">
+                            <div class="project-thumbnail">
+                                <div class="project-image-placeholder">Social App</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Connect+</h3>
+                                <p class="project-desc">Real-time messaging application.</p>
+                                <a href="#" class="github-link">View on GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+                        <!-- Project 5 (New for scroll demo) -->
+                        <div class="project-card">
+                            <div class="project-thumbnail">
+                                <div class="project-image-placeholder">Health Tracker</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Vitality</h3>
+                                <p class="project-desc">Fitness tracking mobile app.</p>
+                                <a href="#" class="github-link">View on GitHub <span>↗</span></a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-image-placeholder">E-Commerce Brand Identity</div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Lumina Fashion</h3>
-                            <p>Brand identity and headless Shopify storefront for a luxury label.</p>
-                            <span class="project-result">📈 Boosted conversion rate by 2.5x</span>
-                        </div>
-                    </div>
+                    <button class="slider-btn next-btn" id="slider-next">›</button>
                 </div>
 
                 <div style="text-align: center; margin-top: 4rem;">
@@ -406,6 +475,21 @@
             menuToggle.classList.toggle('is-active');
             navLinks.classList.toggle('active');
         });
+
+        // Portfolio Slider Logic
+        const sliderTrack = document.getElementById('portfolio-track');
+        const sliderPrev = document.getElementById('slider-prev');
+        const sliderNext = document.getElementById('slider-next');
+
+        if (sliderTrack && sliderPrev && sliderNext) {
+            sliderPrev.addEventListener('click', () => {
+                sliderTrack.scrollLeft -= 350; // Card width + gap (approx)
+            });
+
+            sliderNext.addEventListener('click', () => {
+                sliderTrack.scrollLeft += 350;
+            });
+        }
     </script>
 </body>
 

@@ -667,11 +667,14 @@ section {
 }
 
 /* Portfolio Section (Light Theme) */
+/* Portfolio Section (Light Theme) */
 #portfolio {
     background: #f4f4f5;
     color: #000;
     z-index: 10000;
     position: relative;
+    overflow: hidden;
+    /* Hide scrollbars if they pop out */
 }
 
 #portfolio .section-title {
@@ -682,29 +685,92 @@ section {
     color: #555;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 4rem;
+/* Slider Wrapper */
+.portfolio-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
     margin-top: 4rem;
 }
 
-.project-card {
-    background: transparent;
-    border: none;
-    position: relative;
+/* Slider Track */
+.portfolio-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0.5rem;
+    /* Space for shadows */
+    width: 100%;
+    scrollbar-width: none;
+    /* Firefox */
 }
 
-.project-image {
-    width: 100%;
-    height: 350px;
+.portfolio-slider::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+/* Slider Buttons */
+.slider-btn {
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prev-btn {
+    left: -25px;
+    /* Pull slightly out of container if room, or adjust */
+}
+
+.next-btn {
+    right: -25px;
+}
+
+.slider-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Project Card (Slider Item) */
+.project-card {
+    min-width: 320px;
+    max-width: 320px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #000;
+}
+
+/* Thumbnail */
+.project-thumbnail {
+    width: 100%;
+    height: 200px;
+    background: #e0e0e0;
     position: relative;
     overflow: hidden;
-    margin-bottom: 2rem;
-    transition: all 0.4s ease;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .project-image-placeholder {
@@ -715,38 +781,52 @@ section {
     justify-content: center;
     color: #555;
     font-family: var(--font-heading);
-    letter-spacing: 2px;
-    background: #e0e0e0;
+    letter-spacing: 1px;
+    background: #f0f0f0;
+    font-size: 0.9rem;
 }
 
-.project-card:hover .project-image {
-    border-color: #000;
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+/* Project Info */
+.project-info {
+    padding: 1.5rem;
 }
 
 .project-info h3 {
     font-family: var(--font-heading);
     color: #000;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-.project-info p {
-    color: #444;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+.project-desc {
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    min-height: 3em;
+    /* roughly 2 lines */
 }
 
-.project-result {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #000;
-    color: #fff;
-    font-family: var(--font-body);
+/* GitHub Link */
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #000;
     font-weight: 600;
     font-size: 0.9rem;
-    border-radius: 4px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.github-link:hover {
+    border-bottom-color: #000;
+}
+
+.github-link span {
+    font-size: 1.1rem;
+    line-height: 1;
 }
 
 /* Value Prop (Dark Theme Default) */
